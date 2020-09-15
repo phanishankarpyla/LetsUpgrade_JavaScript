@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 100%;
+            margin: center;
+        }
+
+        .table{
+            padding: 10px;
+            width: 100%;
+        }
+
+        #tdata{
+            text-align: left;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <form onsubmit="add(event)">
+            <input type="text" required id="name" placeholder="Travels Name"/>
+            <input type="text" required id="source" placeholder="From">
+            <input type="text" required id="destination" placeholder="To">
+            <input type="text" required id="number" placeholder="Route Number">
+            <input type="number" required id="capacity" placeholder="Passenger Capacity">
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+    <br/>
+    <br/>
+
+    <div >
+        <input class="search" onkeyup="search()" type="text" placeholder="Search by Source and Destination"/>
+        <button class="search" >Search</button>
+    </div>
+    <div>
+        <table border="1" class="table">
+            <thead>
+                <tr>
+                    <th>Travels Name</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Route Number</th>
+                    <th>Passenger Capacity</th>
+                </tr>
+            </thead>
+            <tbody id="tdata">    
+            </tbody>        
+        </table>
+    </div>
+    
+    <script src="Page2.js"></script>
+</body>
+</html>

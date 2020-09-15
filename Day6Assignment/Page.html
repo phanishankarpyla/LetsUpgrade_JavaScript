@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+            padding: 1px;
+            width: 100% ;
+        }
+        #tdata{
+            text-align: center;
+            /* display: inline-table; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" class="typesearch" placeholder="Search by Name or City"/>
+        <button type="button" onclick="searching()">Search</button>
+    </div>
+    <br/>
+    <div>
+        <table border="1" cellspacing="2" class="table">
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="tdata"></tbody>
+        </table>
+    </div>
+    <script src="page.js"></script>
+</body>
+</html>
