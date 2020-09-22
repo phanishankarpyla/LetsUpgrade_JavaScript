@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopdotcom</title>
+    <style>
+        *{
+            margin: 1px;
+            padding: 1px;
+        }
+        
+        body{
+            background: radial-gradient(circle,grey,black);
+        }
+
+        .header{
+            width:100%;
+            height:100px;
+            background: linear-gradient(to right, steelblue,grey, silver);
+            /* display: inline; */
+        }
+
+        h1{
+            color: white;
+            padding-top: 25px;
+            padding-left: 25px;
+        }
+
+        .body{
+            width:90%;
+            height:auto;
+            margin-left: 5%;
+            background: linear-gradient(180deg,grey,black);
+        }
+
+        .item{
+            width:20%;
+            height:300px;
+            background-color: steelblue;
+            margin-left: 8%;
+            margin-top: 40px;
+            overflow: hidden;
+            border-radius: 5px;
+            border:5px black;
+            display: inline-block;
+        }
+
+        .img{
+            padding:0px;
+            height:50%;
+            border: 5px black;
+            margin-top:0;
+        }
+
+        p{
+            text-align: left;
+            margin-left: 5px;
+            margin-bottom: auto;
+        }
+        
+        .but{
+            margin-bottom:5px ;
+        }
+
+        #id{
+            height: auto;
+        }
+        #number{
+            color: black;
+        }
+        
+        .price{
+            display: inline;
+            margin-left: 27%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header"><h1>ShopDotCom.in</h1>
+        
+    </div>
+    <div class="price">
+        <button onclick="back()"><=</button>
+        <input type="Number" id="min" placeholder="Min Price"/>
+        <input type="Number" id="max" placeholder="Max Price" />
+        <button onclick="filter()">Filter</button>
+    </div>
+    <div class="body" id="body">
+        
+    </div>
+    <div id="number"><h1>your cart</h1>
+        <div id="cart">
+        </div>
+    </div>
+    <script src="shopping.js"></script>
+</body>
+</html>
